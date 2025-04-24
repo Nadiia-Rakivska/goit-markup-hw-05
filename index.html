@@ -475,50 +475,58 @@
       </div>
     </div>
   </footer>
-  <div class="modal-overlay is-open">
+  <div class="modal-overlay">
     <div class="modal">
       <button class="modal-close" type="button">
         <svg class="close-icon" width="8" height="8">
-          <use href="./images/icons.svg#icon-close-black"></use>
+          <use href="./images/symbol-defs.svg#icon-close"></use>
         </svg>
       </button>
       <h3 class="modal-title">Leave your contacts and we will call you back</h3>
       <form class="form-modal">
         <label for="username" class="form-label">Name</label>
         <div class="form-block">
+          <input class="form-input" type="text" name="username" id="username">
           <svg class="form-block-icon" width="12" height="12">
             <use href="./images/icons.svg#icon-username"></use>
           </svg>
-           <input class="form-input" type="text" name="username" id="username">
+          
         </div>
-      
-         
-        
+
         <label for="phone" class="form-label">Phone</label>
         <div class="form-block">
+          <input class="form-input" type="tel" name="phone" id="phone">
           <svg class="form-block-icon" width="12" height="12">
             <use href="./images/icons.svg#icon-phone"></use>
           </svg>
-          <input class="form-input"  type="tel" name="phone" id="phone">
+         
         </div>
          
         <label for="email" class="form-label">Email</label>
         <div class="form-block">
+          <input class="form-input" type="email" name="email" id="email">
           <svg class="form-block-icon" width="12" height="12">
             <use href="./images/icons.svg#icon-email"></use>
           </svg>
-          <input class="form-input" type="email" name="email" id="email">
+         
         </div>
        
 
 
         <label for="comment" class="form-label form-label-comment">Comment</label>
           <textarea class="form-input form-input-comment" id="comment" name="comment" placeholder="Text input" rows="5"></textarea>
-       
-        <label for="checkbox-privacy" class="form-label form-label-privacy">
-          <input type="checkbox" class="checkbox-privat" id="checkbox-privacy">
+       <div>
+
+        <input type="checkbox" name="privacy-checkbox" class="visually-hidden checkbox-checked" id="checkbox-privacy" checked>
+        <label for="checkbox-privacy" class="form-label form-label-privacy"><span class="form-label-checkbox">
+          <svg class="icon-ok" width="10" height="8">
+            <use href="./images/icons.svg#icon-ok"></use>
+          </svg>
+        </span>
+         
           I accept the terms and conditions of the <a href="" class="checkbox-privacy-item"> Privacy Policy</a>
         </label>
+        </div>
         <button type="submit" class="submit-btn submit-btn-form">Send</button>
 
       </form>
