@@ -660,10 +660,7 @@ border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #2e2f42;
     margin-bottom: 16px;
 }
-.form-modal {
-  display: flex;
-  flex-direction: column;
-}
+
 .form-item {
   margin-bottom: 8px;
 }
@@ -738,8 +735,7 @@ resize: none;
   color: #4d5ae5;
 }
 .form-label-privacy{
-  display: flex;
-  flex-direction: row;
+
   align-items: center;
   margin-bottom: 24px;
 }
@@ -757,10 +753,7 @@ resize: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
-/* .icon-ok{
- 
-  fill: transparent;
-} */
+
 .checkbox-privacy-item {
 
 color: #4d5ae5;
@@ -770,11 +763,7 @@ color: #4d5ae5;
   border: none;
   fill: #f4f4fd;
 }
-.form-label-checkbox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .submit-btn-form {
   display: block;
