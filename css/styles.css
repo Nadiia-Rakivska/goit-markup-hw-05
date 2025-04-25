@@ -550,12 +550,6 @@ background-color: #31D0AA;
     
 }
 .form-sub-email::placeholder{
-/* font-family:"Roboto",
-  sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 200%;
-  letter-spacing: 0.04em; */
   color: #fff;
 }
 
@@ -623,7 +617,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
 }
 .modal-close {
   cursor: pointer;
-  /* padding-left: 8px; */
   position: absolute;
   display: flex;
   align-items: center;
@@ -636,8 +629,6 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-b
   padding: 0;
 border-radius: 50%;
 border: 1px solid rgba(0, 0, 0, 0.1);
-
-
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -747,6 +738,7 @@ resize: none;
   color: #4d5ae5;
 }
 .form-label-privacy{
+  display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 24px;
@@ -761,8 +753,9 @@ resize: none;
   height: 16px;
   margin-right: 8px;
   border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border: 1px solid rgba(46, 47, 66, 0.4);
+    
 }
 /* .icon-ok{
  
@@ -772,18 +765,17 @@ resize: none;
 
 color: #4d5ae5;
 }
-.checkbox-checked:checked +.form-label-privacy>.form-label-checkbox {
+.checkbox-checked:checked + .form-label-privacy>.form-label-checkbox {
   background-color: #404bbf;
   border: none;
+  fill: #f4f4fd;
 }
 .form-label-checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.checkbox-checked:checked+.form-label-privacy>.form-label-checkbox>.icon-ok {
-  fill: #f4f4fd;;
-}
+
 .submit-btn-form {
   display: block;
   cursor: pointer;
